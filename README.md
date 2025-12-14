@@ -1,18 +1,22 @@
-## WebGL Project — README
+WebGL Demo Page
 
+This project is a final WebGL demo page created for VK 8.  
+It brings together the WebGL, AR, and VR experiments done during the course into a single webpage.
 
-### Contents:
-- index.html
-- models/ (place your mymodel.glb here)
+## Features
 
+- **ModelViewer**
+  - Displays a GLB 3D model
+  - Supports camera controls and auto-rotation
+  - Includes AR support on compatible devices
 
-### To run locally:
-1) Ensure the model file exists at models/mymodel.glb
-2) Open a terminal in the project root folder
-3) Run: python -m http.server 8000
-4) Open a browser at: http://localhost:8000
+- **three.js Scene**
+  - Custom three.js scene rendered inside the page
+  - Lighting (Hemisphere + Directional light)
+  - Ground plane and animated object
+  - GLB model loaded using GLTFLoader
+  - OrbitControls for interaction
+  - WebXR / VR support using VRButton
 
+## Project Structure
 
-## Notes:
-- model-viewer often requires a local HTTP server (file:// may not work).
-- WebXR/VR features may require HTTPS and a compatible device, but VRButton is displayed for testing.
